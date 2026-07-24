@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.kodiplay" name="KodiPlay" version="1.0.7" provider-name="Marek">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Webshare.cz search and playback in Kodi</summary>
+        <summary lang="sk_SK">Webshare.cz vyhľadávanie a prehrávanie v Kodi</summary>
+        <description lang="en_GB">Search movies and series on Webshare.cz and play them directly in Kodi.</description>
+        <description lang="sk_SK">Vyhľadáva filmy a seriály na Webshare.cz a prehráva ich priamo v Kodi. Rozpozná SK/CZ/kvalitu/kodek, voliteľne dopĺňa názvy cez TMDB.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.kodiplay" name="KodiPlay Repozitár" version="1.0.0" provider-name="Marek">
+    <extension point="xbmc.addon.repository" name="KodiPlay Repozitár">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Marek1040/KodiPlay-repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Marek1040/KodiPlay-repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Marek1040/KodiPlay-repo/main/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="sk_SK">Repozitár pre automatické aktualizácie KodiPlay</summary>
+        <description lang="sk_SK">Po inštalácii tohto repozitára Kodi automaticky ponúka aktualizácie doplnku KodiPlay.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
