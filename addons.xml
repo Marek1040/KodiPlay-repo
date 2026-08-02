@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.kodiplay" name="KodiPlay" version="1.0.13" provider-name="Marek">
+<addon id="plugin.video.kodiplay" name="KodiPlay" version="1.1.0" provider-name="Marek">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
